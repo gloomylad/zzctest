@@ -1,0 +1,26 @@
+{
+    "name": "lichun/test",
+    "description": "test",
+    "authors": [
+        {
+            "name": "lichun",
+            "email": "gloomylad@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "jaeger/querylist": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "core\\": "core/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
