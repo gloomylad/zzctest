@@ -45,6 +45,20 @@ class Base
         return file_put_contents($this->fileName, $html);
     }
 
+    /*public function test2()
+    {
+        $html = file_get_contents($this->fileName);
+        preg_match_all("/<td>(.*?)<\/td>/iU", $html, $matches);
+        $data = [];
+        foreach ($matches[1] as $key => $value) {
+            #$value = preg_replace("#<(\/?[a-zA-Z].*?)>#is"," ", $value);
+            $value = preg_replace('#</?[a-zA-Z][^>]*>#is'," ", $value);
+            $value = preg_replace( "/\s(?=\s)/","\\1", $value);
+            $data[$key] = explode(' ', $value);
+        }
+        p($data);
+    }*/
+
     public function test2()
     {
         $html = file_get_contents($this->fileName);
